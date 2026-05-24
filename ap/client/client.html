@@ -26,12 +26,34 @@
 
         <br>
 
+        <label for="adminPassword">Admin Password:</label>
+        <input type="text" id="adminPassword" name="adminPassword">
+
+        <br>
+
         <button id="connectButton">Connect</button>
+        <button id="adminConnectButton">Admin Connect</button>
+
+        <br>
+        <br>
+
+        <label for="input">Input</label>
+        <input type="text" id="input" name="input">
+
+        <br>
+
+        <button id="sendButton">Send</button>
 
         <br>
         <br>
 
         <textarea readonly id="output" name="output" rows="10" cols="50"></textarea>
+
+        <script>
+            window.onload = () => {
+                document.getElementById("output").value = "";
+            }
+        </script>
 
         <script>
             document.getElementById("connectButton").addEventListener("click", async () =>{
